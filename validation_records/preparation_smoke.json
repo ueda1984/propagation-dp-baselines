@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-08T02:45:38.565146+00:00",
+  "mode": "smoke",
+  "status": "PASS",
+  "details": {},
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "stdout": "release smoke tests: PASS\n",
+  "note": "This is a new run record, not a recovered historical campaign log.",
+  "source_sha256": {
+    "run_validation.py": "56a87ed89cf671d0e789ec973a064f1bf49e0ddf8b74ff39b611aaa2a457584a",
+    "propagation_path_dp_layered.py": "93987c2f826c58a395e4a61480823e4dffca7bf842dbe2b05a5141835a8f1668",
+    "synthetic_instances.py": "0eb9f2010cf9a919756adc69fd0fc9d52ba47116d94be0a56db782509b83664c",
+    "propagation_path_dp_reference.py": "63eb9e09d8368c32c7119f79654cdff24f60614f7e321164d5070198f5915fef",
+    "validate_release_smoke.py": "7a8de3f18ad4303eb241ce5c64e46bc8789634a8e28343c50e70bd55efc9c3eb",
+    "propagation_qubo_equivalence.py": "91603001915f5fdf988180b43b33ba42d341a3bdc8cd448953517db87c74488a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-10-12T13:26:55.279368+00:00",
+  "mode": "edge",
+  "status": "PASS",
+  "details": {
+    "test_groups": 12,
+    "failures": 0,
+    "errors": 0
+  },
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "stdout": "test_all_degenerate_qubo_ground_states (test_edge_cases.EdgeCases.test_all_degenerate_qubo_ground_states) ... ok\ntest_directional_infeasible (test_edge_cases.EdgeCases.test_directional_infeasible) ... ok\ntest_directional_negative_single_best (test_edge_cases.EdgeCases.test_directional_negative_single_best) ... ok\ntest_directional_r2_and_initial_mask (test_edge_cases.EdgeCases.test_directional_r2_and_initial_mask) ... ok\ntest_directional_ties (test_edge_cases.EdgeCases.test_directional_ties) ... ok\ntest_layered_directional (test_edge_cases.EdgeCases.test_layered_directional) ... ok\ntest_layered_pairwise (test_edge_cases.EdgeCases.test_layered_pairwise) ... ok\ntest_pairwise_all_ties (test_edge_cases.EdgeCases.test_pairwise_all_ties) ... ok\ntest_pairwise_infeasible (test_edge_cases.EdgeCases.test_pairwise_infeasible) ... ok\ntest_pairwise_negative (test_edge_cases.EdgeCases.test_pairwise_negative) ... ok\ntest_pairwise_r1 (test_edge_cases.EdgeCases.test_pairwise_r1) ... ok\ntest_pairwise_single_object (test_edge_cases.EdgeCases.test_pairwise_single_object) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.002s\n\nOK\n",
+  "note": "This is a new run record, not a recovered historical campaign log.",
+  "source_sha256": {
+    "synthetic_instances.py": "0eb9f2010cf9a919756adc69fd0fc9d52ba47116d94be0a56db782509b83664c",
+    "run_validation.py": "56a87ed89cf671d0e789ec973a064f1bf49e0ddf8b74ff39b611aaa2a457584a",
+    "propagation_path_dp_reference.py": "63eb9e09d8368c32c7119f79654cdff24f60614f7e321164d5070198f5915fef",
+    "propagation_path_dp_layered.py": "93987c2f826c58a395e4a61480823e4dffca7bf842dbe2b05a5141835a8f1668",
+    "propagation_qubo_equivalence.py": "91603001915f5fdf988180b43b33ba42d341a3bdc8cd448953517db87c74488a",
+    "validate_release_smoke.py": "7a8de3f18ad4303eb241ce5c64e46bc8789634a8e28343c50e70bd55efc9c3eb"
+  }
+}

@@ -1,22 +1,105 @@
 # Exact finite-memory DP for propagation-path models
 
-Private staging repository for reference code accompanying *Exact classical baselines for QUBO-based multi-scattering radio-propagation path search* (manuscript v0.32).
+Reference Python implementations accompanying the manuscript
+*Exact classical baselines for QUBO-based multi-scattering radio-propagation path search*
+(H. Ueda, S. Seo, S. Tsukano, and S. Miyakoshi; manuscript v0.32, October 2026).
 
-The implementation, synthetic test generators, regression tests, and provenance records have been prepared and locally checked; **they have not yet all been committed here**. The GitHub repository remains private pending agreement on software authorship, license, and public release.
+**Status: private prepublication staging.** Public distribution, software authorship,
+license, and a fixed release identifier remain subject to author/contributor
+approval. The software author list is not automatically the manuscript author list.
 
-## Local validation commands
+## Scope
 
-Once files have been committed, install NumPy and run:
+The code solves constrained discrete scattering-object sequence problems with
+pairwise costs or direction-dependent three-object costs. It provides exact
+single-best and ranked-path references and small-instance exhaustive enumerators.
+It does **not** construct radio-propagation loss tables, validate geometrical
+rays, reproduce any unpublished measurements, or demonstrate a quantum speedup.
+Validation instances are synthetic examples of the mathematical model class,
+not reconstructions of the original propagation studies.
+
+## Files
+
+| File | Purpose |
+| --- | --- |
+| `propagation_path_dp_reference.py` | Pairwise/directional single-best and K-best solvers; exhaustive references; random validation driver |
+| `propagation_path_dp_layered.py` | Layer-dependent transitions and sparse-state interfaces |
+| `propagation_qubo_equivalence.py` | Exact tiny penalty-QUBO enumeration, including degenerate ground states |
+| `synthetic_instances.py` | Deterministic synthetic generators |
+| `validate_release_smoke.py` | Packaging smoke checks |
+| `tests/test_edge_cases.py` | Twelve additional regression tests |
+| `run_validation.py` | Selectable smoke, edge, and full correctness suites (no timing benchmarks) |
+| `validation_records/` | Historical-source checksums and clearly dated new validation records |
+| `DATA_PROVENANCE.md` | Data origin, limitations, and validation-record distinctions |
+
+The five inherited reference/source scripts were checked byte-for-byte against
+recovered v0.22 reference sources. Some docstrings preserve their earlier
+version names. Reference routines prioritize transparency over minimum memory:
+for example, K-best implementations construct path tuples instead of realizing
+the theoretical streaming-heap bound.
+
+## Installation
+
+Python and NumPy are required. Local validation of this preparation used
+Python 3.13.5 and NumPy 2.3.5; see `requirements-tested.txt`. These are
+recorded test conditions, **not** a claim of compatibility with every Python
+version or operating system.
 
 ```bash
 python -m pip install -r requirements.txt
+```
+
+## Reproduce the checks
+
+```bash
 python run_validation.py --mode smoke
 python run_validation.py --mode edge
 python run_validation.py --mode full
 ```
 
-The first two validation modes passed locally before upload (smoke and 12 edge-case tests). The full mode is an optional new run of the published correctness campaigns, not a recovery of historical logs. The code does not generate published propagation-loss matrices and makes no quantum speedup claims.
+These commands write new machine-readable output into ignored `validation_output/`.
+The full suite repeats 200 pairwise top-10, 100 direction-dependent top-10, and
+30 tiny exact penalty-QUBO comparisons, using seed 20261006. A new full-suite
+PASS record created on October 12, 2026 is retained at
+`validation_records/v032_repository_full_20261012.json`. It is a new run,
+**not** a reconstruction of historical individual-instance logs. Smoke and
+edge checks passed independently; see the corresponding dated records.
 
-## Release steps
+Do not run `propagation_path_dp_reference.py` directly as a smoke test: its
+`__main__` also launches timing benchmarks. Neither those timings nor the
+structural counts in the paper constitute a quantum/classical speed comparison.
 
-Populate the repository from the prepared v0.32 code package, verify the files and tests in a clean clone, confirm contributor approval and software license, then publish a fixed commit or release. The journal Data Availability statement should be updated only after these steps.
+## Minimal example
+
+```python
+from synthetic_instances import make_pairwise_instance
+from propagation_path_dp_reference import dp_pairwise_kbest
+
+case = make_pairwise_instance(seed=20261006, M=4, R=4)
+paths = dp_pairwise_kbest(
+    case["c_in"], case["c_edge"], case["c_out"], case["R"],
+    allowed=case["allowed"], K=5,
+)
+for cost, sequence in paths:
+    print(cost, sequence)
+```
+
+Object labels are zero-based in the Python code and one-based in the paper.
+Pairwise instances require R >= 1; directional instances require R >= 2.
+The reference routines accept finite cost arrays and optional Boolean
+feasibility masks. The paper's operation-count bounds assume explicit local
+cost access; they exclude construction of the input tables, geometry checks,
+and reconstruction storage.
+
+## Data availability and release
+
+`DATA_PROVENANCE.md` identifies generated and unavailable data. The full loss
+matrices for the principal published examples were not available and are not
+included. This private repository must **not** be cited in the manuscript as
+publicly accessible until a public release is approved and verified.
+
+Before public release, confirm software ownership and contributor consent,
+select a license, confirm software citation authors, create an immutable
+release/commit reference, and update the manuscript's Data Availability text.
+See `RELEASE_BLOCKERS.md`. Do not add unpublished proprietary loss matrices,
+private author correspondence, or annotated manuscript review files.

@@ -1,0 +1,1 @@
+NOT RERUN: solver/validation code unchanged from v0.21; v0.21 release smoke test passed.

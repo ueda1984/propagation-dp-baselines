@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and identify the exact code revision used."
+type: software
+title: "Exact finite-memory dynamic programming for propagation-path models"
+authors:
+  - family-names: Ueda
+    given-names: Hiroshi
+    orcid: "https://orcid.org/0000-0001-9561-0933"
+version: "0.32-preparation"
+abstract: "Reference implementations and synthetic validation for pairwise and direction-dependent constrained propagation-path models."
+# Software author list is provisional and must be confirmed separately from the four manuscript authors.
+# Add repository-code, url, license, DOI, and date-released only after approval.

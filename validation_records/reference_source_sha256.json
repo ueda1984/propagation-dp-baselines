@@ -1,0 +1,10 @@
+{
+  "source": "Recovered curated v0.22 release, byte-identical copies",
+  "files": {
+    "propagation_path_dp_reference.py": "63eb9e09d8368c32c7119f79654cdff24f60614f7e321164d5070198f5915fef",
+    "propagation_path_dp_layered.py": "93987c2f826c58a395e4a61480823e4dffca7bf842dbe2b05a5141835a8f1668",
+    "propagation_qubo_equivalence.py": "91603001915f5fdf988180b43b33ba42d341a3bdc8cd448953517db87c74488a",
+    "synthetic_instances.py": "0eb9f2010cf9a919756adc69fd0fc9d52ba47116d94be0a56db782509b83664c",
+    "validate_release_smoke.py": "7a8de3f18ad4303eb241ce5c64e46bc8789634a8e28343c50e70bd55efc9c3eb"
+  }
+}
