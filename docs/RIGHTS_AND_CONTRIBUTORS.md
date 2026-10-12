@@ -21,6 +21,15 @@ This narrows the outstanding provenance questions but **does not establish legal
 
 No permission from any organization is inferred from the manuscript affiliation or from the creation of this private GitHub repository.
 
+## Institutional-rule check (conditional, not yet resolved)
+
+The University of Osaka's publicly available **Joint Research Regulations** and **Commissioned Research Regulations** both contain Article 19 provisions addressing the ownership of copyright in computer programs developed under the relevant research arrangements. These provisions may assign such rights to the University or govern joint ownership with external parties. **Applicability to this particular code has not been established.** Check the relevant signed project agreements and institutional rules before deciding that a personal copyright notice and open-source grant are authorized.
+
+- Joint research regulation: https://www.osaka-u.ac.jp/kitei/reiki_honbun/u035RG00000471.html
+- Commissioned research regulation: https://www.osaka-u.ac.jp/kitei/reiki_honbun/u035RG00000472.html
+
+Do not interpret a lack of reused corporate/RIKEN source as proof that any employer or funder has no rights to newly created code.
+
 ## Questions for code contributors and rights owners
 
 - Did you author or adapt any part of the scripts? If so, which files and under which employment/institutional conditions?
