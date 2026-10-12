@@ -16,7 +16,7 @@ Official terms: https://opensource.org/license/bsd-3-clause and https://spdx.org
 
 ## Before adding an effective `LICENSE`
 
-1. Confirm code origin and ownership, including whether university/RIKEN/SoftBank employment, existing packages, collaboration agreements, or funding arrangements create rights or approval requirements.
+1. The corresponding author confirmed on 2026-10-12 that the Python code was newly developed under his direction with AI assistance, with no pre-existing SoftBank/RIKEN source reused. **This is a provenance statement, not an independent code audit or a copyright determination.** Determine the copyright owner(s) and whether University of Osaka/RIKEN/SoftBank employment, existing packages, collaboration agreements, funding conditions, or third-party rights impose approval requirements.
 2. Ask each manuscript coauthor (Ueda, Seo, Tsukano, Miyakoshi) to review the public code/data package and disclose contributions, third-party material and confidentiality concerns. **Manuscript authorship does not imply software ownership.**
 3. Identify the correct holder(s) for `Copyright (c) 2026, <verified copyright holder(s)>` and confirm that they authorize licensing under BSD-3-Clause.
 4. Verify the package contains only self-generated synthetic examples/validation records, code intended for public release, and no confidential loss tables or unpublished proprietary inputs.
