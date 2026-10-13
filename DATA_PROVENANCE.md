@@ -19,6 +19,7 @@ loss matrices were not available to the authors, and none are included here.
   computed from specified expressions, not execution times.
 
 No third-party publication PDFs, unpublished corporate data, real propagation
-loss tables, or annotated review manuscripts are included.  Publication of
-this repository, the software license, and contributor/citation metadata require
-approval of the relevant owners and authors.
+loss tables, or annotated review manuscripts are included. Original software
+and the validation records are provided under the BSD 3-Clause license, to the
+extent copyright subsists. The raw cost matrices of the principal propagation
+examples are unavailable, so the validation is restricted to synthetic models.

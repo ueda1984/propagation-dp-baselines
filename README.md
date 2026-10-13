@@ -4,9 +4,12 @@ Reference Python implementations accompanying the manuscript
 *Exact classical baselines for QUBO-based multi-scattering radio-propagation path search*
 (H. Ueda, S. Seo, S. Tsukano, and S. Miyakoshi; manuscript v0.32, October 2026).
 
-**Status: private prepublication staging.** Public distribution, software authorship,
-license, and a fixed release identifier remain subject to author/contributor
-approval. The software author list is not automatically the manuscript author list.
+**Software version:** 0.32.0. **License:** [BSD 3-Clause](LICENSE).
+This reference code was prepared for independent numerical validation of the
+manuscript under Hiroshi Ueda's direction, with AI assistance, rather than as
+a deliverable from a NEDO or corporate joint/commissioned research project.
+The software citation in [`CITATION.cff`](CITATION.cff) is distinct from the
+four-author manuscript; it does not alter the paper's authorship.
 
 ## Scope
 
@@ -91,15 +94,22 @@ feasibility masks. The paper's operation-count bounds assume explicit local
 cost access; they exclude construction of the input tables, geometry checks,
 and reconstruction storage.
 
-## Data availability and release
+## Data availability, citation and licensing
 
-`DATA_PROVENANCE.md` identifies generated and unavailable data. The full loss
-matrices for the principal published examples were not available and are not
-included. This private repository must **not** be cited in the manuscript as
-publicly accessible until a public release is approved and verified.
+[`DATA_PROVENANCE.md`](DATA_PROVENANCE.md) identifies generated and unavailable
+data. The full propagation-loss matrices for the published principal examples
+were not available and are **not** included. These scripts reproduce correctness
+checks for the specified mathematical model class, **not** complete
+radio-propagation performance experiments.
 
-Before public release, confirm software ownership and contributor consent,
-select a license, confirm software citation authors, create an immutable
-release/commit reference, and update the manuscript's Data Availability text.
-See `RELEASE_BLOCKERS.md`. Do not add unpublished proprietary loss matrices,
-private author correspondence, or annotated manuscript review files.
+All copyrightable original software, generated validation records, and
+repository documentation are provided under the [BSD 3-Clause License](LICENSE)
+as applicable. No license is granted for third-party source code or other
+materials not included in this repository. The license imposes no requirement
+to cite the associated scientific paper, but academic users are encouraged to
+cite the manuscript and this software via [`CITATION.cff`](CITATION.cff).
+
+For reproducible references, identify the **full Git commit SHA** of the
+revision actually used: `git rev-parse HEAD`. A branch name by itself is not
+an immutable software version. Do not add unpublished proprietary loss
+matrices or annotated manuscript-review material.

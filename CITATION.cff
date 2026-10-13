@@ -1,12 +1,18 @@
 cff-version: 1.2.0
-message: "Please cite the manuscript and identify the exact code revision used."
+message: "Please cite this software and the accompanying manuscript where appropriate, specifying the exact commit or release used."
 type: software
 title: "Exact finite-memory dynamic programming for propagation-path models"
 authors:
   - family-names: Ueda
     given-names: Hiroshi
     orcid: "https://orcid.org/0000-0001-9561-0933"
-version: "0.32-preparation"
-abstract: "Reference implementations and synthetic validation for pairwise and direction-dependent constrained propagation-path models."
-# Software author list is provisional and must be confirmed separately from the four manuscript authors.
-# Add repository-code, url, license, DOI, and date-released only after approval.
+version: "0.32.0"
+repository-code: "https://github.com/ueda1984/propagation-dp-baselines"
+url: "https://github.com/ueda1984/propagation-dp-baselines"
+license: BSD-3-Clause
+abstract: "Reference dynamic-programming implementations and synthetic validation of pairwise and direction-dependent constrained propagation-path models."
+keywords:
+  - dynamic programming
+  - quadratic unconstrained binary optimization
+  - radio-propagation path search
+  - reproducibility
