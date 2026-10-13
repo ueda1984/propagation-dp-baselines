@@ -6,7 +6,8 @@ These documents are **draft materials** for the reference-code repository associ
 - [Draft license text](BSD_3_CLAUSE_LICENSE_DRAFT.txt) — **not effective**; the copyright holder has not been confirmed
 - [Copyright, provenance and contributor clearance](RIGHTS_AND_CONTRIBUTORS.md) — required sign-offs and distinctions
 - [Coauthor approval request](COAUTHOR_APPROVAL_REQUEST.md) — optional English-language request to send
-- [Data Availability wording](DATA_AVAILABILITY_WORDING.md) — private-review and public-release alternatives
+- [Data Availability and citation wording](DATA_AVAILABILITY_WORDING.md) — private-review and public-release alternatives; APS bibliography requirement
+- [Automated validation](CI_VALIDATION.md) — verified GitHub Actions checks on Python 3.11 and 3.13
 - [Submission/release sequence](RELEASE_SEQUENCE.md) — gates before public release, tag, manuscript update
 - [Institutional clearance query (Japanese)](INSTITUTIONAL_RELEASE_QUERY_JA.md) — optional unsent enquiry about open-source rights for independent paper-validation code
 
