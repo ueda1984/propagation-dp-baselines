@@ -11,7 +11,7 @@
 | Synthetic local-cost generators | Model-level synthetic data; **not** published propagation-loss inputs | Any sensitive assumptions or external data? **Pending** |
 | Dated JSON validation records | Outputs from explicitly documented synthetic correctness runs | Consent to publish records, and any desired separate data license **Pending** |
 | Manuscript authors | Hiroshi Ueda, Shun Seo, Satoyuki Tsukano, Shohei Miyakoshi | Publication approval and credit for each person **Pending** |
-| Employers/funders | University of Osaka, RIKEN R-CCS, SoftBank; NEDO noted in the paper | Any institutional, contract, funding, patent or disclosure approvals? **Pending** |
+| Affiliations/projects | University of Osaka, RIKEN R-CCS and SoftBank appear in the manuscript context; NEDO is also mentioned. Ueda confirms this code was prepared independently to verify this paper, not as a contracted NEDO/SoftBank deliverable | Applicable *employment/institutional* policies and any directly relevant agreement still require confirmation; do not presume code ownership from manuscript affiliations **Pending** |
 
 ## Source-origin confirmation (corresponding author, 2026-10-12)
 
@@ -21,9 +21,15 @@ This narrows the outstanding provenance questions but **does not establish legal
 
 No permission from any organization is inferred from the manuscript affiliation or from the creation of this private GitHub repository.
 
+## Project-scope confirmation (corresponding author, 2026-10-13)
+
+Hiroshi Ueda further confirmed that this reference code was **prepared separately, specifically for the numerical verification in the present manuscript**, and **not prepared as a deliverable under NEDO, SoftBank or other joint/commissioned research arrangements**. This is a direct description of the circumstances of code development; it does not independently establish that a particular agreement, employment-created-work rule or university policy is inapplicable.
+
+As a result, the question of pre-existing SoftBank/RIKEN source reuse and the question of ownership of deliverables under the cited contract arrangements should **not** be treated as positive indications of an issue with this independent verification package. Remaining rights review should focus on actual code provenance, applicable employment/institutional authorship rules, any grant/contract clauses that explicitly cover this work, and contributor approval. Do not claim that every institution has formally waived rights based on this clarification alone.
+
 ## Institutional-rule check (conditional, not yet resolved)
 
-The University of Osaka's publicly available **Joint Research Regulations** and **Commissioned Research Regulations** both contain Article 19 provisions addressing the ownership of copyright in computer programs developed under the relevant research arrangements. These provisions may assign such rights to the University or govern joint ownership with external parties. **Applicability to this particular code has not been established.** Check the relevant signed project agreements and institutional rules before deciding that a personal copyright notice and open-source grant are authorized.
+The University of Osaka's publicly available **Joint Research Regulations** and **Commissioned Research Regulations** both contain Article 19 provisions addressing the ownership of copyright in computer programs developed under the relevant research arrangements. The author has now clarified that **this software was created separately for the paper's numerical checks, rather than as a joint/commissioned-research deliverable**. This significantly narrows why those *contract-specific* provisions might be relevant, but does not by itself decide their applicability. The applicable employment-created-work rules, institutional open-source/disclosure requirements, and any clauses of actually relevant agreements should still be checked before adopting a copyright notice and public BSD-3-Clause grant.
 
 - Joint research regulation: https://www.osaka-u.ac.jp/kitei/reiki_honbun/u035RG00000471.html
 - Commissioned research regulation: https://www.osaka-u.ac.jp/kitei/reiki_honbun/u035RG00000472.html
@@ -45,6 +51,7 @@ Do not interpret a lack of reused corporate/RIKEN source as proof that any emplo
 | Item | Decision | Evidence (email/meeting/document) | Date |
 | --- | --- | --- | --- |
 | Code origin: AI-assisted new development directed by Ueda; no reused SoftBank/RIKEN existing source | **Confirmed by corresponding author (not independently audited)** | Direct confirmation in research conversation | 2026-10-12 |
+| Project scope: independently created for numerical verification of this paper, not as NEDO/SoftBank joint- or commissioned-research deliverable | **Confirmed by corresponding author (contract scope not independently audited)** | Direct confirmation in research conversation | 2026-10-13 |
 | Confirmed software copyright holder(s) | **Pending** | | |
 | Permission to license under BSD-3-Clause | **Pending** | | |
 | Ueda author/publication sign-off | **Pending** | | |

@@ -10,7 +10,7 @@ https://github.com/ueda1984/propagation-dp-baselines
 
 The package is intended to allow readers to reproduce the exact small-instance checks in the manuscript (pairwise and direction-dependent top-K paths, plus the small penalty-QUBO checks). It does not include real propagation-loss matrices, proprietary datasets, or end-to-end ray-tracing benchmarks.
 
-The Python reference code was newly prepared at my direction with AI assistance. To my knowledge, it does not incorporate pre-existing source code from SoftBank or RIKEN. This statement is about source origin; applicable copyright, employment, contribution and release permissions still need confirmation.
+The Python reference code was prepared separately for the numerical verification of this paper, under my direction with AI assistance; it is not a deliverable from the NEDO/SoftBank or other joint/commissioned-research projects. To my knowledge, it does not incorporate pre-existing SoftBank or RIKEN source. These are statements about the code's purpose and origin, not a determination of its copyright ownership; any applicable employment, contribution and release permissions still need confirmation.
 
 I propose releasing the code under the permissive BSD 3-Clause License, which also permits commercial and closed-source downstream use while preserving notices and prohibiting unauthorized endorsement by contributors.
 

@@ -8,6 +8,7 @@ These documents are **draft materials** for the reference-code repository associ
 - [Coauthor approval request](COAUTHOR_APPROVAL_REQUEST.md) — optional English-language request to send
 - [Data Availability wording](DATA_AVAILABILITY_WORDING.md) — private-review and public-release alternatives
 - [Submission/release sequence](RELEASE_SEQUENCE.md) — gates before public release, tag, manuscript update
+- [Institutional clearance query (Japanese)](INSTITUTIONAL_RELEASE_QUERY_JA.md) — optional unsent enquiry about open-source rights for independent paper-validation code
 
 **Current permission status:** lead author approved BSD 3-Clause *as the preferred licensing policy*, conditional on copyright/contributor and institution clearance. This does **not** by itself grant a license to others or authorize making the repository public.
 

@@ -6,6 +6,12 @@ We intend to publish the reference Python implementations under the permissive B
 
 Official terms: https://opensource.org/license/bsd-3-clause and https://spdx.org/licenses/BSD-3-Clause.html
 
+## Confirmed purpose and remaining ownership question
+
+On 2026-10-13 the corresponding author clarified that this code was developed **separately for numerical validation of the manuscript**, rather than as a deliverable under NEDO, SoftBank or other joint/commissioned research agreements. This supplements the 2026-10-12 statement that the reference code was prepared under Ueda's direction with AI assistance and without reusing existing corporate or RIKEN source.
+
+This makes contract-deliverable and source-reuse questions less pertinent to this particular package, but does **not** establish who legally holds copyright or whether an academic employer's general policies apply. Do not infer institution-wide consent to public distribution. The provisional BSD-3-Clause choice is not operative until the actual rightsholder(s) authorize it.
+
 ## Scope and consequences
 
 - Allows use, copying, modification, source/binary redistribution, and commercial use under three conditions: retaining source notices, reproducing notices for binary distributions, and no endorsement through use of author/contributor names without written permission.
